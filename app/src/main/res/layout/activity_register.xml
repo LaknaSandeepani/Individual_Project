@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView_login"
+                android:layout_width="384dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.125"
+              />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIGN UP"
+                android:textColor="#461D8F"
+                android:textColorHighlight="#1F2D7A"
+                android:textSize="20sp" />
+            <Spinner
+                android:layout_marginTop="30dp"
+                android:id="@+id/userType"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                ></Spinner>
+            <EditText
+                android:id="@+id/txtfname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:hint="First Name"
+                />
+            <EditText
+                android:id="@+id/txtlname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:hint="Last Name"
+                />
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <RadioGroup
+                android:id="@+id/rb_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/rb_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="48dp"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/rb_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="48dp"
+                    android:text="Female" />
+            </RadioGroup>
+            <EditText
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:hint="Email" />
+            <!--        <Spinner-->
+            <!--            android:layout_marginTop="30dp"-->
+            <!--            android:id="@+id/userType"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="30dp"-->
+            <!--            ></Spinner>-->
+            <EditText
+                android:id="@+id/editEnrollNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enrollment No."
+                android:layout_marginTop="20dp"
+                />
+            <EditText
+                android:id="@+id/editCardNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Library Card No."
+                android:layout_marginTop="20dp"
+                />
+
+            <!--        <EditText-->
+            <!--            android:id="@+id/txtfname"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="match_parent"-->
+            <!--            android:layout_marginTop="20dp"-->
+            <!--            android:hint="First Name"-->
+            <!--           />-->
+            <!--        <EditText-->
+            <!--            android:id="@+id/txtlname"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="match_parent"-->
+            <!--            android:layout_marginTop="20dp"-->
+            <!--            android:hint="Last Name"-->
+            <!--            />-->
+            <!--        <TextView-->
+            <!--            android:id="@+id/gender"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Gender"-->
+            <!--            android:textSize="16sp"-->
+            <!--            android:layout_marginTop="20dp"/>-->
+
+            <!--        <RadioGroup-->
+            <!--            android:id="@+id/rb_gender"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:orientation="horizontal"-->
+            <!--            android:layout_marginTop="20dp">-->
+
+            <!--            <RadioButton-->
+            <!--                android:id="@+id/rb_male"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:height="48dp"-->
+            <!--                android:text="Male" />-->
+
+            <!--            <RadioButton-->
+            <!--                android:id="@+id/rb_female"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:height="48dp"-->
+            <!--                android:text="Female" />-->
+            <!--        </RadioGroup>-->
+            <!--        <EditText-->
+            <!--            android:id="@+id/txtnic"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="match_parent"-->
+            <!--            android:layout_marginTop="20dp"-->
+            <!--            android:hint="NIC" />-->
+            <!--        <EditText-->
+            <!--            android:id="@+id/txtdob"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:ems="10"-->
+            <!--            android:inputType="date"-->
+            <!--            android:hint="Date Of Birth"-->
+            <!--            android:layout_marginTop="20dp"/>-->
+            <!--        <TextView-->
+            <!--            android:id="@+id/status"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Status"-->
+            <!--            android:textSize="16sp"-->
+            <!--            android:layout_marginTop="20dp"/>-->
+            <!--        <Spinner-->
+            <!--            android:id="@+id/sp_status"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginTop="20dp"-->
+            <!--            android:entries="@array/array_status"-->
+            <!--           />-->
+            <!--        <EditText-->
+            <!--            android:id="@+id/txtaddress"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="match_parent"-->
+            <!--            android:layout_marginTop="20dp"-->
+            <!--            android:hint="Address" />-->
+            <!--        <EditText-->
+            <!--            android:id="@+id/txt_phone"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:ems="10"-->
+            <!--            android:inputType="phone"-->
+            <!--            android:hint="Phone Number"-->
+            <!--            android:layout_marginTop="20dp"/>-->
+
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/district"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="District"-->
+            <!--            android:textSize="16sp"-->
+            <!--            android:layout_marginTop="20dp"-->
+            <!--            />-->
+            <!--        <Spinner-->
+            <!--            android:id="@+id/sp_district"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:entries="@array/array_district"/>-->
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/attachment"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Pay Rs.1000/= Fee and Attach your Recipt"-->
+            <!--            android:textSize="16sp"-->
+            <!--            android:layout_marginTop="20dp"/>-->
+            <!--        <EditText-->
+            <!--            android:id="@+id/txtattachment"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="200dp"-->
+            <!--            android:padding="10dp"-->
+            <!--            android:gravity="top"-->
+            <!--            android:hint="Please Attach the Payment Recipt."-->
+            <!--            android:inputType="textMultiLine"-->
+            <!--            android:textSize="14sp"-->
+            <!--            android:layout_marginTop="20dp"/>-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_marginTop="20dp"
+                android:id="@+id/txt_pwd"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:id="@+id/txt_confirmpwd"
+                android:layout_marginTop="20dp"/>
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apply To Register"
+                android:layout_marginTop="20dp"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
