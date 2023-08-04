@@ -27,18 +27,13 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="382dp"
+                android:layout_height="39dp"
                 android:text="SIGN UP"
                 android:textColor="#461D8F"
                 android:textColorHighlight="#1F2D7A"
                 android:textSize="20sp" />
-            <Spinner
-                android:layout_marginTop="30dp"
-                android:id="@+id/userType"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                ></Spinner>
+
             <EditText
                 android:id="@+id/txtfname"
                 android:layout_width="match_parent"
@@ -94,20 +89,6 @@
             <!--            android:layout_width="match_parent"-->
             <!--            android:layout_height="30dp"-->
             <!--            ></Spinner>-->
-            <EditText
-                android:id="@+id/editEnrollNo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Enrollment No."
-                android:layout_marginTop="20dp"
-                />
-            <EditText
-                android:id="@+id/editCardNo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Library Card No."
-                android:layout_marginTop="20dp"
-                />
 
             <!--        <EditText-->
             <!--            android:id="@+id/txtfname"-->
