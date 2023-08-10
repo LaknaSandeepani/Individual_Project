@@ -13,11 +13,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Individual_Project"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
-        <activity
-            android:name=".CameraActivity"
-            android:exported="false" />
         <activity
             android:name=".FishActivity"
             android:exported="false" />

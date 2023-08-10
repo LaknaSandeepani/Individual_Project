@@ -12,6 +12,7 @@
         android:layout_height="159dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="40dp"
+        android:background="@drawable/img_11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
@@ -40,6 +41,7 @@
 
                 <ImageButton
                     android:id="@+id/btn_identify"
+                    android:background="@drawable/img_3"
                     android:layout_width="91dp"
                     android:layout_height="107dp"
                     android:contentDescription="@string/app_name"
@@ -55,8 +57,7 @@
                     android:layout_width="91dp"
                     android:layout_height="107dp"
                     android:layout_marginLeft="5dp"
-
-
+                    android:background="@drawable/img_9"
                     android:contentDescription="@string/app_name"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -70,23 +71,7 @@
                     android:layout_width="91dp"
                     android:layout_height="107dp"
                     android:layout_marginLeft="5dp"
-
-
-                    android:contentDescription="@string/app_name"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.495"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.454" />
-
-                <ImageButton
-                    android:id="@+id/btn_report"
-                    android:layout_width="91dp"
-                    android:layout_height="107dp"
-                    android:layout_marginLeft="5dp"
-
-
+                    android:background="@drawable/img_1"
                     android:contentDescription="@string/app_name"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -100,7 +85,7 @@
                     android:layout_width="91dp"
                     android:layout_height="107dp"
                     android:layout_marginLeft="5dp"
-
+                    android:background="@drawable/img_7"
                     android:contentDescription="@string/app_name"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -117,27 +102,27 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="158dp"
-        android:layout_height="194dp"
+        android:layout_width="218dp"
+        android:layout_height="190dp"
         android:layout_marginStart="190dp"
         android:layout_marginTop="66dp"
         android:layout_marginEnd="55dp"
         android:layout_marginBottom="71dp"
+        android:background="@drawable/fish"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView4"
-        app:layout_constraintVertical_bias="1.0"
-        />
+        app:layout_constraintVertical_bias="0.428" />
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="145dp"
-        android:layout_height="252dp"
+        android:layout_width="147dp"
+        android:layout_height="300dp"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="36dp"
-        android:text=""
+        android:layout_marginEnd="24dp"
+        android:text="Fish poisoning due to consumption of poisonous fish, also known as ichthyosarcotoxicosis or fish toxicity, occurs when individuals consume fish that contain toxic substances. These toxins can be naturally occurring in certain species of fish or can be produced by harmful algal blooms that contaminate the fish with toxins."
         app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/scrollView4" />
 

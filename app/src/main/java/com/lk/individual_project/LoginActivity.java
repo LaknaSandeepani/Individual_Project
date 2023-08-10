@@ -107,7 +107,7 @@ public class LoginActivity extends AppCompatActivity{
                                     // intent to home activity
                                     Intent intent
                                             = new Intent(LoginActivity.this,
-                                            CameraActivity.class);
+                                            HomeScreenActivity.class);
                                     startActivity(intent);
                                 }
 
