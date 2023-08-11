@@ -5,10 +5,14 @@ public class Fish {
     private String countryName;
     private String imageUrl;
 
-    public Fish(String name, String countryName, String imageUrl) {
+    private String description;
+
+
+    public Fish(String name) {
         this.name = name;
         this.countryName = countryName;
         this.imageUrl = imageUrl;
+        this.description = description;
     }
 
     public Fish() {
@@ -38,5 +42,12 @@ public class Fish {
         this.imageUrl = imageUrl;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }
 
