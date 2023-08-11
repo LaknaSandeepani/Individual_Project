@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Display the fish name and image -->
+    <TextView
+        android:id="@+id/reportFishName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/reportFishImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/reportFishName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop" />
+
+    <!-- Provide an option for users to describe why they believe the fish is poisonous -->
+    <EditText
+        android:id="@+id/reportDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reportFishImage"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Describe why you believe the fish is poisonous"
+        android:inputType="textMultiLine" />
+
+    <!-- Add a button to select an image -->
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reportDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Select Image" />
+
+    <!-- Add a submit button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectImageButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Submit Report" />
+
+</RelativeLayout>

@@ -8,6 +8,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
 
     <application
         android:allowBackup="true"
@@ -19,6 +21,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
+        <activity
+            android:name=".ReportFishActivity"
+            android:exported="false" />
         <activity
             android:name=".FishDetailActivity"
             android:exported="false" />
