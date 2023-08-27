@@ -8,38 +8,74 @@
     android:padding="16dp"
     tools:context=".CameraPreviewActivity">
 
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Fish Image Detector"
+        android:textColor="#121111"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
     <ImageView
         android:id="@+id/photoImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/fish"
+        />
+
+    <TextView
+        android:id="@+id/suitableSayingTextView"
         android:layout_width="wrap_content"
-        android:layout_height="300dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/fish" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Upload or Capture a photo to know the fish is poisonous or not!"
+        android:textColor="#0E0E67"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/galleryButton"
-        android:layout_width="189dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#121111"
+        android:background="@drawable/rounded_button_background"
         android:text="Choose from Gallery"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:layout_marginTop="24dp" />
 
-    <!-- Add a margin between the two buttons -->
     <Button
         android:id="@+id/cameraButton"
-        android:layout_width="189dp"
-        android:layout_height="44dp"
-        android:background="#121111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_button_background"
         android:text="Capture Photo"
-        android:textColor="@color/white"
-        android:layout_marginTop="8dp" /> <!-- Add margin top here -->
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/predictionTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/photoImageView"
+        android:layout_width="368dp"
+        android:layout_height="84dp"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:layout_marginTop="16dp"
-        android:text=""
-        android:textSize="18sp"/>
+        android:text="Prediction Will Appear Here..........."
+        android:background="@drawable/rounded_textview_background"
+        android:textColor="#EAE6E6"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/inspirationalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="Dive into the depths of creativity and capture stories that thrive beneath the waves."
+        android:textColor="#337373"
+        android:textSize="16sp" />
+
 </LinearLayout>

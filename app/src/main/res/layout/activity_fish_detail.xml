@@ -32,12 +32,12 @@
 
     <TextView
         android:id="@+id/detailFishDescription"
-        android:layout_width="344dp"
-        android:layout_height="271dp"
+        android:layout_width="360dp"
+        android:layout_height="336dp"
         android:layout_below="@id/detailFishName"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="45dp"
+        android:layout_marginEnd="29dp"
         android:padding="16dp"
         android:textSize="16sp" />
 

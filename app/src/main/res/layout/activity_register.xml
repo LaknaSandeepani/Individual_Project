@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="10dp"
     android:background="#0FFFFFFF"
     tools:context=".RegisterActivity">
-
 
     <TextView
         android:id="@+id/textView"
@@ -17,7 +15,7 @@
         android:text="SIGN UP"
         android:textColor="#121111"
         android:textSize="20sp"
-        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         />
 
@@ -25,6 +23,7 @@
         android:id="@+id/txtfname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
         android:layout_marginTop="20dp"
         android:hint="First Name"
         android:textColorHint="#121111"
@@ -34,6 +33,7 @@
         android:id="@+id/txtlname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/txtfname"
         android:layout_marginTop="20dp"
         android:hint="Last Name"
         android:textColorHint="#121111"
@@ -46,6 +46,7 @@
         android:text="Gender"
         android:textColor="#121111"
         android:textSize="16sp"
+        android:layout_below="@id/txtlname"
         android:layout_marginTop="20dp"/>
 
     <RadioGroup
@@ -54,6 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_below="@id/gender"
         android:layout_marginTop="20dp">
 
         <RadioButton
@@ -61,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Male"
-            android:textColor="#121111"/>
+            android:textColor="#121111" />
 
         <RadioButton
             android:id="@+id/rb_female"
@@ -75,6 +77,7 @@
         android:id="@+id/txt_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/rb_gender"
         android:layout_marginTop="20dp"
         android:hint="Email"
         android:textColorHint="#121111"/>
@@ -82,6 +85,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/txt_email"
         android:hint="Password"
         android:inputType="textPassword"
         android:id="@+id/txt_pwd"
@@ -91,6 +95,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/txt_pwd"
         android:hint="Confirm Password"
         android:textColorHint="#121111"
         android:inputType="textPassword"
@@ -101,8 +106,10 @@
         android:id="@+id/btn_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/txt_confirmpwd"
+        android:layout_marginTop="153dp"
         android:background="@drawable/rounded_button_background"
         android:text="Register"
-        android:textColor="@color/white"
-        android:layout_marginTop="20dp"/>
-</LinearLayout>
+        android:textColor="@color/white" />
+
+</RelativeLayout>

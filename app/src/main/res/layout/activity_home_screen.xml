@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Welcome to the Fish Information App"
+        android:text="......Welcome to the Poison Fish Defender......"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
@@ -38,10 +38,10 @@
         android:layout_marginTop="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.363">
+        app:layout_constraintVertical_bias="0.359">
 
         <HorizontalScrollView
             android:layout_width="wrap_content"
@@ -55,9 +55,9 @@
 
                 <ImageButton
                     android:id="@+id/btn_identify"
-                    android:background="@drawable/img_3"
                     android:layout_width="91dp"
                     android:layout_height="107dp"
+                    android:background="@drawable/img_3"
                     android:contentDescription="@string/app_name"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -132,12 +132,23 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="147dp"
-        android:layout_height="300dp"
+        android:layout_width="143dp"
+        android:layout_height="241dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="24dp"
-        android:text="Fish poisoning due to consumption of poisonous fish, also known as ichthyosarcotoxicosis or fish toxicity, occurs when individuals consume fish that contain toxic substances. These toxins can be naturally occurring in certain species of fish or can be produced by harmful algal blooms that contaminate the fish with toxins."
+        android:text="PoisonFishDefender app empowers users to report newly discovered poisonous fish species. It's a platform for identifying and sharing toxic fish findings, aiding researchers and authorities in understanding and managing hazardous aquatic environments."
         app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/scrollView4" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:itemBackground="@color/blue"
+        app:menu="@menu/bottom_nav_menu" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

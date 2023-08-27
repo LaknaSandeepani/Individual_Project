@@ -9,7 +9,7 @@
         android:id="@+id/reportHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Report Fish Poisoning"
+        android:text="Discovery of New Poisonous Fish"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
@@ -27,6 +27,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:textColor="@android:color/black" />
+
+
 
     <ImageView
         android:id="@+id/reportFishImage"
@@ -50,8 +52,8 @@
         android:layout_below="@id/reportFishImage"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:background="@color/blue"
         android:text="Select Image"
+        android:background="@drawable/rounded_button_background"
         android:textColor="@android:color/white" />
 
     <EditText
@@ -74,7 +76,7 @@
         android:layout_below="@id/reportDescription"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:background="@color/blue"
+        android:background="@drawable/rounded_button_background"
         android:text="Report"
         android:textColor="@android:color/white" />
 
