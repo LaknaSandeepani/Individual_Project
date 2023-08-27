@@ -17,14 +17,29 @@
 
     <Button
         android:id="@+id/galleryButton"
-        android:layout_width="wrap_content"
+        android:layout_width="189dp"
         android:layout_height="wrap_content"
-        android:text="Choose from Gallery" />
+        android:background="#121111"
+        android:text="Choose from Gallery"
+        android:textColor="@color/white" />
 
+    <!-- Add a margin between the two buttons -->
     <Button
         android:id="@+id/cameraButton"
+        android:layout_width="189dp"
+        android:layout_height="44dp"
+        android:background="#121111"
+        android:text="Capture Photo"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp" /> <!-- Add margin top here -->
+
+    <TextView
+        android:id="@+id/predictionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Capture Photo" />
-
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/photoImageView"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="18sp"/>
 </LinearLayout>

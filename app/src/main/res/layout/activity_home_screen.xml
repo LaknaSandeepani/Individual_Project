@@ -7,15 +7,29 @@
     android:background="#FFFFFF"
     tools:context=".HomeScreenActivity">
 
+
+    <TextView
+        android:id="@+id/txt_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Welcome to the Fish Information App"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
+
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="280dp"
         android:layout_height="159dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/img_11"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toBottomOf="@id/txt_heading" />
 
     <ScrollView
         android:id="@+id/scrollView4"

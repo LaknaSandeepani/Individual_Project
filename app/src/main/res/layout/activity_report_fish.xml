@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#01182B"
+    android:background="#FFFFFF"
     >
 
     <!-- Heading -->
@@ -14,7 +14,7 @@
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:textColor="@android:color/white" />
+        android:textColor="@color/black" />
 
     <!-- Display the fish name and image -->
     <TextView
@@ -66,18 +66,14 @@
         android:inputType="textMultiLine"
         android:textColorHint="@android:color/darker_gray" />
 
+
     <Button
         android:id="@+id/submitButton"
-        android:layout_width="100dp"
-        android:layout_height="22dp"
+        android:layout_width="141dp"
+        android:layout_height="27dp"
         android:layout_below="@id/reportDescription"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="79dp"
-        android:layout_marginBottom="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
         android:background="@color/blue"
         android:text="Report"
         android:textColor="@android:color/white" />

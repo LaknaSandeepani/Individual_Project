@@ -11,6 +11,7 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.Manifest;
 
@@ -36,11 +37,13 @@ public class CameraPreviewActivity extends AppCompatActivity {
     private ImageView photoImageView;
     private Interpreter tflite;
 
+    private TextView predictionTextView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera_preview);
-
+        predictionTextView = findViewById(R.id.predictionTextView);
         photoImageView = findViewById(R.id.photoImageView);
 
         try {
@@ -133,23 +136,28 @@ public class CameraPreviewActivity extends AppCompatActivity {
             // Preprocess the image
             float[][][][] inputArray = preprocessImage(bitmap);
 
-            float[][] outputArray = new float[1][31]; // Replace with the correct number of classes
+            float[][] outputArray = new float[1][31];
 
 
             tflite.run(inputArray, outputArray);
 
             // Process the output and display prediction
             int predictedClassIndex = argmax(outputArray[0]);
+            float predictedPercentage = outputArray[0][predictedClassIndex] * 100;
             String predictedClassName = getClassName(predictedClassIndex);
-            showToast("Predicted fish species: " + predictedClassName);
+
+            // Update the TextView with the predicted species and percentage
+            String predictionText = "Predicted fish species: " + predictedClassName +
+                    "\nConfidence: " + String.format("%.2f", predictedPercentage) + "%";
+            predictionTextView.setText(predictionText);
         }
     }
 
     private float[][][][] preprocessImage(Bitmap bitmap) {
-        // Resize the image to match the input size of the model
-        Bitmap resizedBitmap = Bitmap.createScaledBitmap(bitmap, 100, 100, false);
 
-        float[][][][] inputArray = new float[1][100][100][3]; // Replace INPUT_WIDTH, INPUT_HEIGHT, NUM_CHANNELS
+        Bitmap resizedBitmap = Bitmap.createScaledBitmap(bitmap, 400, 400, false);
+
+        float[][][][] inputArray = new float[1][100][100][3];
         for (int x = 0; x < 100; x++) {
             for (int y = 0; y < 100; y++) {
                 int pixel = resizedBitmap.getPixel(x, y);
@@ -173,19 +181,19 @@ public class CameraPreviewActivity extends AppCompatActivity {
     }
 
     private String getClassName(int classIndex) {
-        // Define the class labels corresponding to each class index
+
         String[] classLabels = {
-                "Bangus(poison)", "Big Head Carp", "Black Spotted Barb", "Catfish", "Climbing Perch", "Fourfinger Threadfin",
+                "Bangus", "Big Head Carp", "Black Spotted Barb", "Catfish(Poisonous Fish)", "Climbing Perch", "Fourfinger Threadfin",
                 "Freshwater Eel", "Glass Perchlet", "Goby", "Gold Fish", "Gourami", "Grass Carp",
-                "Green Spotted Puffer", "Indian Carp", "Indo-Pacific Tarpon", "Jaguar Gapote", "Janitor Fish",
-                "Knifefish", "Long-Snouted Pipefish", "Mosquito Fish", "Mudfish", "Mullet", "Pangasius",
-                "Perch", "Scat Fish", "Silver Barb", "Silver Carp", "Silver Perch", "Snakehead", "Tenpounder", "Tilapia"
+                "Green Spotted Puffer(Poisonous Fish)", "Indian Carp", "Indo-Pacific Tarpon", "Jaguar Gapote", "Janitor Fish(Non-Poisonous Fish)",
+                "Knifefish(Poisonous Fish)", "Long-Snouted Pipefish", "Mosquito Fish", "Mudfish(Poisonous Fish)", "Mullet", "Pangasius",
+                "Perch", "Scat Fish", "Silver Barb", "Silver Carp", "Silver Perch", "Snakehead(Poisonous Fish)", "Tenpounder", "Tilapia"
         };
 
         if (classIndex >= 0 && classIndex < classLabels.length) {
             return classLabels[classIndex];
         } else {
-            return "Unknown"; // Return a default label for unknown classes
+            return "Unknown";
         }
     }
 

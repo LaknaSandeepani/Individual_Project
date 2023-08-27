@@ -1,6 +1,7 @@
 package com.lk.individual_project;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -58,6 +59,17 @@ public class RegisterActivity extends AppCompatActivity {
         String password = txtPassword.getText().toString().trim();
         String confirmPassword = txtConfirmPassword.getText().toString().trim();
 
+        // Validate email and password
+        if (TextUtils.isEmpty(email)) {
+            Toast.makeText(this, "Please enter an email", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (TextUtils.isEmpty(password)) {
+            Toast.makeText(this, "Please enter a password", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         // Check if passwords match
         if (!password.equals(confirmPassword)) {
             Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show();
@@ -87,7 +99,7 @@ public class RegisterActivity extends AppCompatActivity {
                             // Clear the input fields
                             clearInputFields();
 
-                            // TODO: Add code to navigate to another activity if desired
+
                         }
                     } else {
                         // Registration failed, show an error message or toast

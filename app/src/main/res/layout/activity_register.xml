@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="#01182B"
+    android:background="#0FFFFFFF"
     tools:context=".RegisterActivity">
 
 
@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SIGN UP"
-        android:textColor="#F6F2F2"
+        android:textColor="#121111"
         android:textSize="20sp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:hint="First Name"
-        android:textColorHint="#F6F2F2"
+        android:textColorHint="#121111"
         />
 
     <EditText
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:hint="Last Name"
-        android:textColorHint="#F6F2F2"
+        android:textColorHint="#121111"
         />
 
     <TextView
@@ -44,7 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Gender"
-        android:textColor="#F6F2F2"
+        android:textColor="#121111"
         android:textSize="16sp"
         android:layout_marginTop="20dp"/>
 
@@ -61,14 +61,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Male"
-            android:textColor="#F6F2F2"/>
+            android:textColor="#121111"/>
 
         <RadioButton
             android:id="@+id/rb_female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Female"
-            android:textColor="#F6F2F2"/>
+            android:textColor="#121111"/>
     </RadioGroup>
 
     <EditText
@@ -77,7 +77,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:hint="Email"
-        android:textColorHint="#F6F2F2"/>
+        android:textColorHint="#121111"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -86,13 +86,13 @@
         android:inputType="textPassword"
         android:id="@+id/txt_pwd"
         android:layout_marginTop="20dp"
-        android:textColorHint="#F6F2F2"/>
+        android:textColorHint="#121111"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Confirm Password"
-        android:textColorHint="#F6F2F2"
+        android:textColorHint="#121111"
         android:inputType="textPassword"
         android:id="@+id/txt_confirmpwd"
         android:layout_marginTop="20dp"/>
