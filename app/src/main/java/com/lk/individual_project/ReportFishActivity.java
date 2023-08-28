@@ -66,7 +66,7 @@ public class ReportFishActivity extends AppCompatActivity {
             // Upload the selected image to Firebase Storage
             uploadImageToStorage(selectedImageUri, description);
         } else {
-            Toast.makeText(this, "Please select an image and provide a description", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please upload an image and provide a description", Toast.LENGTH_SHORT).show();
         }
     }
 

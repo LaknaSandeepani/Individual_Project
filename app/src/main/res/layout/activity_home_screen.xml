@@ -136,7 +136,7 @@
         android:layout_height="241dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="24dp"
-        android:text="PoisonFishDefender app empowers users to report newly discovered poisonous fish species. It's a platform for identifying and sharing toxic fish findings, aiding researchers and authorities in understanding and managing hazardous aquatic environments."
+        android:text="Poison Fish Defender app empowers users to report newly discovered poisonous fish species. It's a platform for identifying and sharing toxic fish findings, aiding researchers and authorities in understanding and managing hazardous aquatic environments."
         app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/scrollView4" />
 

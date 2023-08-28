@@ -31,26 +31,31 @@
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/detailFishDescriptionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailFishName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="290dp"
+        android:text="Description:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/detailFishDescription"
         android:layout_width="360dp"
         android:layout_height="336dp"
         android:layout_below="@id/detailFishName"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/rounded_textview_gray"
         android:padding="16dp"
         android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/detailFishName3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/detailFishImage"
-        android:layout_marginTop="415dp"
-        android:padding="16dp"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <!-- Add more views as needed for additional fish details -->
 
 </RelativeLayout>

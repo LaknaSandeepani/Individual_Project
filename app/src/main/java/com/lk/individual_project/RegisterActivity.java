@@ -1,5 +1,6 @@
 package com.lk.individual_project;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.Button;
@@ -99,6 +100,9 @@ public class RegisterActivity extends AppCompatActivity {
                             // Clear the input fields
                             clearInputFields();
 
+                            // Redirect to login activity
+                            navigateToLoginActivity();
+
 
                         }
                     } else {
@@ -115,5 +119,10 @@ public class RegisterActivity extends AppCompatActivity {
         txtPassword.setText("");
         txtConfirmPassword.setText("");
         rbGender.clearCheck();
+    }
+    private void navigateToLoginActivity() {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+        finish(); // Close the current activity so the user can't go back to it
     }
 }

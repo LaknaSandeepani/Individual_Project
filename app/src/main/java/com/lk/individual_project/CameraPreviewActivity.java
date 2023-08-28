@@ -136,7 +136,7 @@ public class CameraPreviewActivity extends AppCompatActivity {
             // Preprocess the image
             float[][][][] inputArray = preprocessImage(bitmap);
 
-            float[][] outputArray = new float[1][31];
+            float[][] outputArray = new float[1][32];
 
 
             tflite.run(inputArray, outputArray);
@@ -147,9 +147,9 @@ public class CameraPreviewActivity extends AppCompatActivity {
             String predictedClassName = getClassName(predictedClassIndex);
 
             // Update the TextView with the predicted species and percentage
-            String predictionText = "Predicted fish species: " + predictedClassName +
-                    "\nConfidence: " + String.format("%.2f", predictedPercentage) + "%";
+            String predictionText = "Predicted fish species: " + predictedClassName;
             predictionTextView.setText(predictionText);
+
         }
     }
 
@@ -183,11 +183,12 @@ public class CameraPreviewActivity extends AppCompatActivity {
     private String getClassName(int classIndex) {
 
         String[] classLabels = {
-                "Bangus", "Big Head Carp", "Black Spotted Barb", "Catfish(Poisonous Fish)", "Climbing Perch", "Fourfinger Threadfin",
-                "Freshwater Eel", "Glass Perchlet", "Goby", "Gold Fish", "Gourami", "Grass Carp",
-                "Green Spotted Puffer(Poisonous Fish)", "Indian Carp", "Indo-Pacific Tarpon", "Jaguar Gapote", "Janitor Fish(Non-Poisonous Fish)",
-                "Knifefish(Poisonous Fish)", "Long-Snouted Pipefish", "Mosquito Fish", "Mudfish(Poisonous Fish)", "Mullet", "Pangasius",
-                "Perch", "Scat Fish", "Silver Barb", "Silver Carp", "Silver Perch", "Snakehead(Poisonous Fish)", "Tenpounder", "Tilapia"
+                "Bangus(Non Poisonous Fish)", "Big Head Carp(Non Poisonous Fish)", "Black Spotted Barb(Non Poisonous Fish)", "Catfish(Poisonous Fish)", "Climbing Perch(Non Poisonous Fish)", "Fourfinger Threadfin(Non Poisonous Fish)",
+                "Freshwater Eel(Non Poisonous Fish)", "Linna Fish(Non Poisonous Fish)", "Goby(Non Poisonous Fish)", "Gold Fish(Non Poisonous Fish)", "Gourami(Non Poisonous Fish)", "Grass Carp(Non Poisonous Fish)",
+                "Green Spotted Puffer(Poisonous Fish)", "Indian Carp(Non Poisonous Fish)", "Indo-Pacific Tarpon(Non Poisonous Fish)", "Jaguar Gapote(Non Poisonous Fish)", "Janitor Fish(Non Poisonous Fish)",
+                "Knifefish(Poisonous Fish)", "Puffer fish(Poisonous Fish)", "Mosquito Fish(Non Poisonous Fish)", "Mudfish(Poisonous Fish)", "Mullet(Non Poisonous Fish)", "Pangasius(Non Poisonous Fish)",
+                "Perch(Non Poisonous Fish)", "Scat Fish(Non Poisonous Fish)", "Silver Barb(Non Poisonous Fish)", "Silver Carp(Non Poisonous Fish)", "Silver Perch(Non Poisonous Fish)", "Snakehead(Poisonous Fish)", "Tenpounder(Non Poisonous Fish)", "Tilapia(Non Poisonous Fish)", "Unknown"
+
         };
 
         if (classIndex >= 0 && classIndex < classLabels.length) {

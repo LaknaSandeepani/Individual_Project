@@ -7,14 +7,14 @@
     <!-- Heading -->
     <TextView
         android:id="@+id/reportHeading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Discovery of New Poisonous Fish"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:layout_width="339dp"
+        android:layout_height="77dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:textColor="@color/black" />
+        android:text="Help to Discover New Poisonous Fish....."
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <!-- Display the fish name and image -->
     <TextView
@@ -27,7 +27,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:textColor="@android:color/black" />
-
 
 
     <ImageView

@@ -104,7 +104,8 @@ public class LoginActivity extends AppCompatActivity{
                                                     Toast.LENGTH_LONG)
                                             .show();
 
-
+                                    // Clear the input fields
+                                    clearInputFields();
                                     // if sign-in is successful
                                     // intent to home activity
                                     Intent intent
@@ -126,4 +127,9 @@ public class LoginActivity extends AppCompatActivity{
                             }
                         });
     }
+    private void clearInputFields() {
+        emailTextView.setText("");
+        passwordTextView.setText("");
+    }
+
 }
